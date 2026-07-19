@@ -78,7 +78,7 @@ fruits_list = data.split(",")
 print("\nSplit into list:", fruits_list)
 
 joined_string = " | ".join(fruits_list)
-print("Joined string:", joined_string)
+print("Joined string:...", joined_string)
 
 
 # -------------------------------------------------------------------------
@@ -94,5 +94,5 @@ log_entry = {
     "message": parts[2]
 }
 
-print("\nAdvanced String Example:")
+print("\nAdvanced String Example:...")
 print(log_entry)
