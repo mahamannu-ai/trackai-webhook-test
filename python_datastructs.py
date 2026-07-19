@@ -188,4 +188,27 @@ for n in numbers_list:
 
 print("Total sum:", total)
 
+# -------------------------------------------------------------------------
+# Example 3 (Intermediate): List Comprehension
+# -------------------------------------------------------------------------
+
+even_numbers = [n for n in numbers_list if n % 2 == 0]
+print("\nEven numbers:", even_numbers)
+
+
+# -------------------------------------------------------------------------
+# Example 4 (Advanced): Nested Lists + Dictionary
+# -------------------------------------------------------------------------
+
+students = [
+    {"name": "Alice", "marks": [80, 85, 90]},
+    {"name": "Bob", "marks": [70, 75, 78]},
+]
+
+for student in students:
+    avg = sum(student["marks"]) / len(student["marks"])
+    student["average"] = avg
+
+print("\nAdvanced List Example:")
+print(students)
 
