@@ -212,3 +212,43 @@ for student in students:
 print("\nAdvanced List Example:")
 print(students)
 
+
+
+# =============================================================================
+# SECTION 5: DICTIONARIES
+# =============================================================================
+
+print("\n==================== DICTIONARIES ====================\n")
+
+# -------------------------------------------------------------------------
+# Example 1 (Beginner): Basic Dictionary Usage
+# -------------------------------------------------------------------------
+
+user = {
+    "username": "manish",
+    "age": 35
+}
+
+print("Username:", user["username"])
+
+
+# -------------------------------------------------------------------------
+# Example 2 (Intermediate): Updating and Iterating
+# -------------------------------------------------------------------------
+
+user["location"] = "India"
+
+for key, value in user.items():
+    print(f"{key} -> {value}")
+
+
+# -------------------------------------------------------------------------
+# Example 3 (Intermediate): Dictionary Comprehension
+# -------------------------------------------------------------------------
+
+scores = {"math": 80, "science": 90, "english": 85}
+
+passed = {k: v for k, v in scores.items() if v >= 85}
+print("\nPassed subjects:", passed)
+
+
