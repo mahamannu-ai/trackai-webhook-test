@@ -154,3 +154,38 @@ sensor_report = {
 print("\nAdvanced Array Example:")
 print(sensor_report)
 print(log_entry)
+
+# =============================================================================
+# SECTION 3: LISTS
+# =============================================================================
+
+print("\n==================== LISTS ====================\n")
+
+# -------------------------------------------------------------------------
+# Example 1 (Beginner): Creating and Modifying a List
+# -------------------------------------------------------------------------
+
+animals = ["dog", "cat", "elephant"]
+
+animals.append("tiger")
+animals[1] = "lion"
+
+print("Animals list:", animals)
+
+
+# -------------------------------------------------------------------------
+# Example 2 (Intermediate): List Slicing and Iteration
+# -------------------------------------------------------------------------
+
+numbers_list = [10, 20, 30, 40, 50]
+
+print("\nFirst three:", numbers_list[:3])
+print("Last two:", numbers_list[-2:])
+
+total = 0
+for n in numbers_list:
+    total += n
+
+print("Total sum:", total)
+
+
