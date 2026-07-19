@@ -96,3 +96,61 @@ log_entry = {
 
 print("\nAdvanced String Example:...")
 print(log_entry)
+# =============================================================================
+# SECTION 2: ARRAYS
+# =============================================================================
+
+print("\n==================== ARRAYS ====================\n")
+
+from array import array
+
+# -------------------------------------------------------------------------
+# Example 1 (Beginner): Creating and Accessing an Array
+# -------------------------------------------------------------------------
+
+numbers = array('i', [1, 2, 3, 4])
+
+print("Array contents:", numbers)
+print("First element:", numbers[0])
+
+
+# -------------------------------------------------------------------------
+# Example 2 (Intermediate): Array Operations
+# -------------------------------------------------------------------------
+
+numbers.append(5)
+numbers.remove(2)
+
+print("\nAfter append and remove:", numbers)
+
+for num in numbers:
+    print("Number:", num)
+
+
+# -------------------------------------------------------------------------
+# Example 3 (Intermediate): Mathematical Processing
+# -------------------------------------------------------------------------
+
+squares = array('i', [])
+
+for n in numbers:
+    squares.append(n * n)
+
+print("\nSquares array:", squares)
+
+
+# -------------------------------------------------------------------------
+# Example 4 (Advanced): Array + List + Dictionary
+# -------------------------------------------------------------------------
+
+sensor_readings = array('f', [23.5, 24.1, 22.8])
+
+sensor_report = {
+    "unit": "Celsius",
+    "readings": list(sensor_readings),
+    "average": sum(sensor_readings) / len(sensor_readings)
+}
+
+print("\nAdvanced Array Example:")
+print(sensor_report)
+print(log_entry)
