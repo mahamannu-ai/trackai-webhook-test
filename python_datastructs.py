@@ -153,3 +153,4 @@ sensor_report = {
 
 print("\nAdvanced Array Example:")
 print(sensor_report)
+print(log_entry)
